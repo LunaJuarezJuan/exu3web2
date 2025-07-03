@@ -305,5 +305,11 @@ WHERE area_id = @AreaId";
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult FrmConsulta()
+        {
+            var datos = db.Database.SqlQuery<AreaConsultaDTO>("EXEC sp_ConsultarAreas").ToList();
+            return View(datos);
+        }
     }
 }

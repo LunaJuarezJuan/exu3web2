@@ -1,0 +1,204 @@
+﻿@model IEnumerable<RECEXA3U_LUNA.Models.AreaConsultaDTO>
+
+@{
+    ViewBag.Title = "Consulta de Áreas";
+
+    // Agrupar por Figura y simular registros por año (solo como ejemplo)
+    var datosPorFigura = Model
+        .GroupBy(m => m.Figura)
+        .Select(g => new
+        {
+            Nombre = g.Key,
+            Total = g.Count(),
+            Y2022 = g.Count() / 3,
+            Y2023 = g.Count() / 3,
+            Y2024 = g.Count() - (2 * (g.Count() / 3))
+        }).ToList();
+
+    var categorias = string.Join(", ", datosPorFigura.Select(d => $"'{d.Nombre}'"));
+    var datos2022 = string.Join(", ", datosPorFigura.Select(d => d.Y2022));
+    var datos2023 = string.Join(", ", datosPorFigura.Select(d => d.Y2023));
+    var datos2024 = string.Join(", ", datosPorFigura.Select(d => d.Y2024));
+    var promedio = string.Join(", ", datosPorFigura.Select(d => ((d.Y2022 + d.Y2023 + d.Y2024) / 3.0).ToString("0.##")));
+    var datosPie = string.Join(", ", new[] {
+        $"{{ name: '2022', y: {datosPorFigura.Sum(d => d.Y2022)} }}",
+        $"{{ name: '2023', y: {datosPorFigura.Sum(d => d.Y2023)} }}",
+        $"{{ name: '2024', y: {datosPorFigura.Sum(d => d.Y2024)} }}"
+    });
+}
+
+<h2>Consulta de Áreas</h2>
+
+<!-- TABLA DE REGISTROS CON FILAS INTERCALADAS -->
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Figura</th>
+            <th>Parámetro 1</th>
+            <th>Parámetro 2</th>
+            <th>Parámetro 3</th>
+            <th>Resultado</th>
+            <th>Fecha y hora</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Select((value, index) => new { value, index }))
+        {
+            var rowClass = item.index % 2 == 0 ? "table-light" : "table-secondary";
+            <tr class="@rowClass">
+                <td>@item.value.Figura</td>
+                <td>@item.value.Parametro1</td>
+                <td>@item.value.Parametro2</td>
+                <td>@item.value.Parametro3</td>
+                <td>@item.value.Resultado</td>
+                <td>@item.value.FechaHora.ToString("g")</td>
+                <td>@item.value.Observaciones</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Consulta de Áreas</h2>
+
+<!-- Botón para alternar gráficos -->
+<div class="mb-3">
+    <button id="btnCambiarGrafico" class="btn btn-primary">Cambiar Gráfico</button>
+</div>
+
+<!-- Contenedores de gráficos -->
+<div id="graficoUnificado" style="width:100%; height:500px;"></div>
+<div id="graficoPackedBubble" style="width:100%; height:600px; display:none;"></div>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/packed-bubble.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let mostrandoPacked = false;
+
+        // Botón para cambiar gráfico
+        document.getElementById("btnCambiarGrafico").addEventListener("click", function () {
+            mostrandoPacked = !mostrandoPacked;
+            document.getElementById("graficoUnificado").style.display = mostrandoPacked ? "none" : "block";
+            document.getElementById("graficoPackedBubble").style.display = mostrandoPacked ? "block" : "none";
+        });
+
+        // Gráfico original (columnas + línea + pastel)
+        Highcharts.chart('graficoUnificado', {
+            title: {
+                text: 'Áreas registradas por Figura (2022-2024)'
+            },
+            xAxis: {
+                categories: [@Html.Raw(categorias)]
+            },
+            yAxis: {
+                title: {
+                    text: 'Cantidad de registros'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' registros'
+            },
+            plotOptions: {
+                series: {
+                    borderRadius: '25%'
+                }
+            },
+            series: [{
+                type: 'column',
+                name: '2022',
+                data: [@Html.Raw(datos2022)]
+            }, {
+                type: 'column',
+                name: '2023',
+                data: [@Html.Raw(datos2023)]
+            }, {
+                type: 'column',
+                name: '2024',
+                data: [@Html.Raw(datos2024)]
+            }, {
+                type: 'line',
+                name: 'Promedio',
+                step: 'center',
+                data: [@Html.Raw(promedio)],
+                marker: {
+                    lineWidth: 2,
+                    lineColor: Highcharts.getOptions().colors[3],
+                    fillColor: 'white'
+                }
+            }, {
+                type: 'pie',
+                name: 'Totales por Año',
+                data: [@Html.Raw(datosPie)],
+                center: [80, 60],
+                size: 100,
+                innerSize: '70%',
+                showInLegend: false,
+                dataLabels: {
+                    enabled: false
+                }
+            }]
+        });
+
+        // Gráfico packedbubble
+        Highcharts.chart('graficoPackedBubble', {
+            chart: {
+                type: 'packedbubble',
+                height: '50%'
+            },
+            title: {
+                text: 'Distribución por Figura y Año (Packed Bubble)',
+                align: 'top'
+            },
+            tooltip: {
+                useHTML: true,
+                pointFormat: '<b>{point.name}:</b> {point.value} registros'
+            },
+            plotOptions: {
+                packedbubble: {
+                    minSize: '20%',
+                    maxSize: '100%',
+                    zMin: 0,
+                    zMax: 1000,
+                    layoutAlgorithm: {
+                        gravitationalConstant: 0.05,
+                        splitSeries: true,
+                        seriesInteraction: false,
+                        dragBetweenSeries: true,
+                        parentNodeLimit: true
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}',
+                        filter: {
+                            property: 'y',
+                            operator: '>',
+                            value: 1
+                        },
+                        style: {
+                            color: 'black',
+                            textOutline: 'none',
+                            fontWeight: 'normal'
+                        }
+                    }
+                }
+            },
+            series: [
+                {
+                    name: '2022',
+                    data: [@Html.Raw(string.Join(", ", datosPorFigura.Select(d => $"{{ name: '{d.Nombre}', value: {d.Y2022} }}")))]
+                },
+                {
+                    name: '2023',
+                    data: [@Html.Raw(string.Join(", ", datosPorFigura.Select(d => $"{{ name: '{d.Nombre}', value: {d.Y2023} }}")))]
+                },
+                {
+                    name: '2024',
+                    data: [@Html.Raw(string.Join(", ", datosPorFigura.Select(d => $"{{ name: '{d.Nombre}', value: {d.Y2024} }}")))]
+                }
+            ]
+        });
+    });
+</script>

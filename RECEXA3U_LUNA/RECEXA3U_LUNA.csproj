@@ -105,6 +105,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AreaConsultaDTO.cs" />
     <Compile Include="Models\AreaFigura.cs" />
     <Compile Include="Models\bdfigurasEntities.cs" />
     <Compile Include="Models\Figura.cs" />
@@ -117,6 +118,7 @@
     <Content Include="Views\AreaFigura\Create.cshtml" />
     <Content Include="Views\AreaFigura\Edit.cshtml" />
     <Content Include="Views\AreaFigura\Delete.cshtml" />
+    <Content Include="Views\AreaFigura\FrmConsulta.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
