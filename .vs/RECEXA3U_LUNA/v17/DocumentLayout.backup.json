@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\recexa3u_luna\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\recexa3u_luna\\controllers\\areafiguracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\controllers\\areafiguracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|c:\\users\\luna3\\source\\repos\\recexa3u_luna\\recexa3u_luna\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|c:\\users\\luna3\\source\\repos\\recexa3u_luna\\recexa3u_luna\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|c:\\users\\luna3\\source\\repos\\recexa3u_luna\\recexa3u_luna\\views\\areafigura\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\recexa3u_luna\\views\\areafigura\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\views\\areafigura\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -39,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\models\\figura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\recexa3u_luna\\controllers\\areafiguracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\controllers\\areafiguracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\recexa3u_luna\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5FB571-90D9-4306-9A17-3844E9F83E6B}|RECEXA3U_LUNA\\RECEXA3U_LUNA.csproj|solutionrelative:recexa3u_luna\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,35 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AreaFigura.cs",
-              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaFigura.cs",
-              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Models\\AreaFigura.cs",
-              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaFigura.cs",
-              "RelativeToolTip": "RECEXA3U_LUNA\\Models\\AreaFigura.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvwoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T17:31:04.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AreaConsultaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
-              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
-              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
-              "RelativeToolTip": "RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T21:27:19.539Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "RECEXA3U_LUNA\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T22:03:50.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Views\\AreaFigura\\Index.cshtml",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Views\\AreaFigura\\Index.cshtml",
@@ -98,12 +91,11 @@
               "RelativeToolTip": "RECEXA3U_LUNA\\Views\\AreaFigura\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T17:36:35.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T17:36:35.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Controllers\\HomeController.cs",
@@ -115,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Web.config",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Web.config",
@@ -128,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FrmConsulta.cshtml",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Views\\AreaFigura\\FrmConsulta.cshtml",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Views\\AreaFigura\\FrmConsulta.cshtml",
@@ -140,7 +132,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "AreaFiguraController.cs",
+              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
+              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
+              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
+              "RelativeToolTip": "RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
+              "ViewState": "AgIAACQBAAAAAAAAAAAIwDQBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T17:29:40.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AreaConsultaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
+              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
+              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
+              "RelativeToolTip": "RECEXA3U_LUNA\\Models\\AreaConsultaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T21:27:19.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AreaFigura.cs",
+              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaFigura.cs",
+              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Models\\AreaFigura.cs",
+              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\AreaFigura.cs",
+              "RelativeToolTip": "RECEXA3U_LUNA\\Models\\AreaFigura.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvwoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T17:31:04.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Views\\AreaFigura\\Create.cshtml",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Views\\AreaFigura\\Create.cshtml",
@@ -152,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Views\\AreaFigura\\Edit.cshtml",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Views\\AreaFigura\\Edit.cshtml",
@@ -164,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "bdfigurasEntities.cs",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\bdfigurasEntities.cs",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Models\\bdfigurasEntities.cs",
@@ -176,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Figura.cs",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Models\\Figura.cs",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Models\\Figura.cs",
@@ -188,19 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AreaFiguraController.cs",
-              "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
-              "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
-              "ToolTip": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
-              "RelativeToolTip": "RECEXA3U_LUNA\\Controllers\\AreaFiguraController.cs",
-              "ViewState": "AgIAACQBAAAAAAAAAAAIwDQBAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T17:29:40.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Views\\AreaFigura\\Delete.cshtml",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Views\\AreaFigura\\Delete.cshtml",
@@ -212,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "web.config",
               "DocumentMoniker": "C:\\Users\\luna3\\source\\repos\\RECEXA3U_LUNA\\RECEXA3U_LUNA\\Views\\web.config",
               "RelativeDocumentMoniker": "RECEXA3U_LUNA\\Views\\web.config",
