@@ -1,0 +1,114 @@
+﻿@model IEnumerable<RECEXA3U_LUNA.Models.AreaFigura>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>
+                <i class="fa fa-calculator"></i> Listado de Cálculos de Área
+            </h2>
+            <hr />
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="panel-title">
+                                <i class="fa fa-list"></i> Registros de Cálculos
+                            </h4>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Nuevo Cálculo", "Create", null, new { @class = "btn btn-primary" })
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Figura</th>
+                                        <th>Parámetros</th>
+                                        <th>Resultado</th>
+                                        <th>Fecha/Hora</th>
+                                        <th>Observaciones</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td><strong>@Html.DisplayFor(modelItem => item.AreaId)</strong></td>
+                                            <td>
+                                                <span class="label label-info">
+                                                    @Html.DisplayFor(modelItem => item.Figura.Nombre)
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="parametros">
+                                                    <small>
+                                                        <strong>P1:</strong> @Html.DisplayFor(modelItem => item.Parametro1)
+                                                        @if (item.Parametro2.HasValue)
+                                                        {
+                                                            <br /><strong>P2:</strong> @Html.DisplayFor(modelItem => item.Parametro2)
+                                                        }
+                                                        @if (item.Parametro3.HasValue)
+                                                        {
+                                                            <br /><strong>P3:</strong> @Html.DisplayFor(modelItem => item.Parametro3)
+                                                        }
+                                                    </small>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="label label-success">
+                                                    @Html.DisplayFor(modelItem => item.Resultado) u²
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <small>@Html.DisplayFor(modelItem => item.FechaHora)</small>
+                                            </td>
+                                            <td>
+                                                <small>@Html.DisplayFor(modelItem => item.Observaciones)</small>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group" role="group">
+                                                    @Html.ActionLink("Editar", "Edit", new { id = item.AreaId }, new { @class = "btn btn-warning btn-sm" })
+                                                    @Html.ActionLink("Eliminar", "Delete", new { id = item.AreaId }, new { @class = "btn btn-danger btn-sm" })
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info text-center">
+                            <h4><i class="fa fa-info-circle"></i> No hay registros</h4>
+                            <p>No se encontraron cálculos de área registrados.</p>
+                            @Html.ActionLink("Registrar el primer cálculo", "Create", null, new { @class = "btn btn-primary" })
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .parametros {
+        min-width: 100px;
+    }
+
+    .table > tbody > tr > td {
+        vertical-align: middle;
+    }
+
+    .btn-group .btn {
+        margin-right: 4px;
+    }
+</style>

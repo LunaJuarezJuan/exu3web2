@@ -1,0 +1,47 @@
+﻿@model RECEXA3U_LUNA.Models.AreaFigura
+
+@{
+    ViewBag.Title = "Eliminar Área";
+}
+
+<h2>¿Estás seguro de que deseas eliminar este cálculo?</h2>
+
+<div>
+    <h4>Área de Figura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Figura</dt>
+        <dd>@Model.Figura?.Nombre</dd>
+
+        <dt>Parámetro 1</dt>
+        <dd>@Model.Parametro1</dd>
+
+        <dt>Parámetro 2</dt>
+        <dd>@Model.Parametro2</dd>
+
+        <dt>Parámetro 3</dt>
+        <dd>@Model.Parametro3</dd>
+
+        <dt>Resultado</dt>
+        <dd>@Model.Resultado</dd>
+
+        <dt>Fecha</dt>
+        <dd>@Model.FechaHora</dd>
+
+        <dt>Estado</dt>
+        <dd>@Model.Estado</dd>
+
+        <dt>Observaciones</dt>
+        <dd>@Model.Observaciones</dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            @Html.HiddenFor(model => model.AreaId)
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    }
+</div>
